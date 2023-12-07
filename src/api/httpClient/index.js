@@ -41,10 +41,10 @@ export function getRequest(path, params = {}) {
       // The request success range of 2xx
       const { status, statusText, data, headers } = response;
       return {
-        headers: headers,
-        status: status,
-        statusText: statusText,
-        data: data,
+        headers,
+        status,
+        statusText,
+        data,
       };
     })
     .catch((error) => {
