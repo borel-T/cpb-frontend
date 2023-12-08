@@ -10,7 +10,7 @@ function ProductList({ list = [] }) {
             <ProductCard
               key={key}
               id={item.id}
-              imageUrl={""}
+              imageUrl={item.images[0]?.src}
               bodyHtml={item.bodyHtml}
             />
           ))}

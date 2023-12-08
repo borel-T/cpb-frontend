@@ -9,6 +9,7 @@ function ProductsPage() {
   const loading = useSelector((state) => state.products.loading);
   const error = useSelector((state) => state.products.error);
   console.log("data::", allProducts);
+  console.log("loading::", error);
 
   return (
     <>
