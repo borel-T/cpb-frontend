@@ -4,7 +4,7 @@ import ProductCard from "./productCard";
 function ProductList({ list = [] }) {
   if (list.length > 0) {
     return (
-      <>
+      <div className="card-container">
         {list.length > 0 &&
           list.map((item, key) => (
             <ProductCard
@@ -14,10 +14,10 @@ function ProductList({ list = [] }) {
               bodyHtml={item.bodyHtml}
             />
           ))}
-      </>
+      </div>
     );
   }
-  return <>NO PRODUCT FOUND</>;
+  return null;
 }
 
 export default ProductList;
